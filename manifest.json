@@ -1,25 +1,29 @@
 {
-  // https://developer.chrome.com/extensions/getstarted
-  "manifest_version": 2,
+    "manifest_version": 2,
 
-  "name": "AhtoPoster",
-  "version": "0.0.1",
-  "description": "Lets you Ahto-matically queue stuff on PostPlanner or Tumblr.",
-  "author": "Ahto",
+    "name": "Facebook AutoPoker",
+    "version": "0.0.0",
+    "description": "Automatically poke other users on Facebook.",
+    "author": "Ahto",
 
-  "icons": {
-       "16":  "icons/placeholder-16.png",
-       "48":  "icons/placeholder-48.png",
-      "128": "icons/placeholder-128.png"
-  },
+    "icons": {
+        "16":  "icons/placeholder-16.png",
+        "48":  "icons/placeholder-48.png",
+        "128": "icons/placeholder-128.png"
+    },
 
-  "permissions": ["activeTab", "contextMenus", "storage"],
-  "optional_permissions": [],
+    "permissions": [],
+    "optional_permissions": [],
 
-  "background": {
-      "scripts": ["eventPage.js"]
+    "content_scripts": [
+        {
+            "matches" : [
+                "http://www.facebook.com/pokes/*",
+                "https://www.facebook.com/pokes/*"
+            ],
 
-      // Doesn't work:
-      //"persistent": false
-  }
+            "js": ["contentScript.js"],
+            "css": []
+        }
+    ]
 }
