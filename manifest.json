@@ -7,9 +7,9 @@
     "author": "Ahto",
 
     "icons": {
-        "16":  "icons/placeholder-16.png",
-        "48":  "icons/placeholder-48.png",
-        "128": "icons/placeholder-128.png"
+        "16":  "icons/gearfinger-16.png",
+        "48":  "icons/gearfinger-48.png",
+        "128": "icons/gearfinger-128.png"
     },
 
     "permissions": [],
