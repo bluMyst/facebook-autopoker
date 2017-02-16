@@ -2,8 +2,6 @@
 (function() {
   var AutoPokeSettings, LocalStorageValue, clicks, getRandomInt, observer, pokesContainer, setTimeout_, settings;
 
-  console.clear();
-
   console.log("Ready to poke back.");
 
   LocalStorageValue = (function() {

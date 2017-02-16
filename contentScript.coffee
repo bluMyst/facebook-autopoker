@@ -1,4 +1,4 @@
-console.clear()
+#console.clear()
 console.log "Ready to poke back."
 
 class LocalStorageValue
